@@ -20,7 +20,7 @@
       "indicators"
     ]
   },
-  "help_online": "",
+  "help_online": "https://github.com/fortinet-fortisoar/connector-zoom-feed/blob/release/1.0.0/docs/ZoomFeedConnectorDoc.md",
   "icon_small_name": "small.png",
   "icon_large_name": "large.png",
   "configuration": {

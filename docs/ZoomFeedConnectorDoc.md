@@ -23,7 +23,7 @@ Certified: No
 For the procedure to configure a connector, click [here](https://docs.fortinet.com/document/fortisoar/0.0.0/configuring-a-connector/1/configuring-a-connector)
 ### Configuration parameters
 <p>In FortiSOAR&trade;, on the Connectors page, click the <strong>Zoom Feed</strong> connector row (if you are in the <strong>Grid</strong> view on the Connectors page) and in the <strong>Configurations</strong> tab enter the required configuration details:</p>
-<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Server URL</td><td>Server url to get Zoom IPs feeds data. By default it is set to https://assets.zoom.us/docs/ipranges/
+<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Server URL</td><td>Server url to get Zoom IPs feeds data. By default it is set to https://assets.zoom.us/docs/ipranges
 </td>
 </tr><tr><td>Verify SSL</td><td>Specifies whether the SSL certificate for the server is to be verified or not. <br/>By default, this option is set to True.</td></tr>
 </tbody></table>
@@ -80,7 +80,7 @@ The Data Ingestion Wizard enables you to configure scheduled pulling of data fro
 1.   To begin configuring data ingestion, click Configure Data Ingestion on the Zoom Feed connector’s "Configurations" page. Click Let’s Start by fetching some data, to open the “Fetch Sample Data” screen.
 ![](media/start.png)
 Sample data is required to create a field mapping between the Zoom Feeds and FortiSOAR™. The sample data is pulled from connector actions or ingestion playbooks.
-2.  On the Fetch Data screen, provide the configurations required to fetch Zoom Feeds. You can pull threat intel feeds from Zoom Feed for required zoom services and add custom confidence level, reputation, TLP, and maximum age to that feed.  The fetched data is used to create a mapping between the Zoom Feeds and FortiSOAR™ threat intel feeds. Once you have completed specifying the configurations, click Fetch Data.
+2.  On the Fetch Data screen, provide the configurations required to fetch Zoom Feeds. You can pull threat intel feeds from Zoom Feed for required zoom services and add custom confidence level, reputation, TLP, and maximum age to that feed. The fetched data is used to create a mapping between the Zoom Feeds and FortiSOAR™ threat intel feeds. Once you have completed specifying the configurations, click Fetch Data.
 ![](media/fetch.png)
 Once you have completed specifying the configurations, click Fetch Data.
 3.  On the Field Mapping screen, map the fields of a Zoom Feed to the fields of a threat intel feed present in FortiSOAR™. To map a field, click the key in the sample data to add the “jinja” value of the field. For example, to map the service parameter of a Zoom Feed to the Label parameter of a FortiSOAR™ threat intel feed, click the Label field, and then click the service field to populate its keys: For more information on field mapping, see the Data Ingestion chapter in the "Connectors Guide" in the FortiSOAR™ product documentation. Once you have completed mapping the fields, click Save Mapping & Continue.
