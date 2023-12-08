@@ -34,8 +34,8 @@
         "name": "server_url",
         "placeholder": "e.g https://assets.zoom.us/docs/ipranges",
         "value": "https://assets.zoom.us/docs/ipranges",
-        "description": "Server url to get Zoom IPs feeds data. By default it is set to https://assets.zoom.us/docs/ipranges",
-        "tooltip": "Server url to get Zoom IPs feeds data."
+        "description": "Server url to get Zoom feeds data. By default it is set to https://assets.zoom.us/docs/ipranges",
+        "tooltip": "Server url to get Zoom feeds data."
       },
       {
         "title": "Verify SSL",
