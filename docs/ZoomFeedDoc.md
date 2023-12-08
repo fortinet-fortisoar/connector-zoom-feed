@@ -6,19 +6,14 @@ Zoom publishes its current IP address ranges in txt files. This connector facili
 
 Connector Version: 1.0.0
 
-FortiSOAR&trade; Version Tested on: 7.4.1-3167
-
-Zoom Feed Version Tested on: 
-
 Authored By: Fortinet
 
-Certified: Yes
+Certified: No
 ## Installing the connector
 <p>Use the <strong>Content Hub</strong> to install the connector. For the detailed procedure to install a connector, click <a href="https://docs.fortinet.com/document/fortisoar/0.0.0/installing-a-connector/1/installing-a-connector" target="_top">here</a>.</p><p>You can also use the <code>yum</code> command as a root user to install the connector:</p>
 <pre>yum install cyops-connector-zoom-feed</pre>
 
 ## Prerequisites to configuring the connector
-- You must have the credentials of Zoom Feed server to which you will connect and perform automated operations.
 - The FortiSOAR&trade; server should have outbound connectivity to port 443 on the Zoom Feed server.
 
 ## Minimum Permissions Required
@@ -28,7 +23,7 @@ Certified: Yes
 For the procedure to configure a connector, click [here](https://docs.fortinet.com/document/fortisoar/0.0.0/configuring-a-connector/1/configuring-a-connector)
 ### Configuration parameters
 <p>In FortiSOAR&trade;, on the Connectors page, click the <strong>Zoom Feed</strong> connector row (if you are in the <strong>Grid</strong> view on the Connectors page) and in the <strong>Configurations</strong> tab enter the required configuration details:</p>
-<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Server URL</td><td>Server url to get Zoom IPs feeds data.
+<table border=1><thead><tr><th>Parameter</th><th>Description</th></tr></thead><tbody><tr><td>Server URL</td><td>Server url to get Zoom IPs feeds data. By default it is set to https://assets.zoom.us/docs/ipranges/
 </td>
 </tr><tr><td>Verify SSL</td><td>Specifies whether the SSL certificate for the server is to be verified or not. <br/>By default, this option is set to True.</td></tr>
 </tbody></table>
@@ -75,7 +70,10 @@ The `Sample - zoom-feed - 1.0.0` playbook collection comes bundled with the Zoom
 
 Use the Data Ingestion Wizard to easily ingest data into FortiSOAR™ by pulling data from Zoom Feed. Currently, data from Zoom Feed are mapped to "threat intel feeds" in FortiSOAR™. For more information on the Data Ingestion Wizard, see the "Connectors Guide" in the FortiSOAR™ product documentation.
 
-Configure Data Ingestion
+### Prerequisites
+Before you begin ingesting data into FortiSOAR, it is strongly recommended that you deploy and set up the Threat Intel Management Solution Pack, since, by default, data ingestion is mapped to the Threat Intel Feed modules.
+
+### Configure Data Ingestion
 You can configure data ingestion using the “Data Ingestion Wizard” to seamlessly map the incoming Zoom Feed data to FortiSOAR™ "threat intel feeds". 
 The Data Ingestion Wizard enables you to configure scheduled pulling of data from the Zoom Feed into FortiSOAR™. It also lets you pull some sample data from Zoom Feed using which you can define the mapping of data between the Zoom Feed and FortiSOAR™. The mapping of common fields is generally already done by the Data Ingestion Wizard; users are mostly required to only map any custom fields that are added to the Zoom Feed.
 
